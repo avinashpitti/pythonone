@@ -24,4 +24,3 @@ print(a==c)
 print(id(a))
 print(id(b))
 print(id(c))
-
