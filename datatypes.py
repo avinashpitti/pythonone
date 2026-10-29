@@ -113,3 +113,21 @@ for value in dict2.values():
 
 print("name" in dict2.keys())
 print("varun" in dict2.values())
+
+#immutable: whose value or state can't be changed after its creation
+x=10
+print(x)
+print(id(x)) # different ids
+x=20
+print(x)
+print(id(x))
+
+
+numbers=[1,2,3,4]
+# numbers.extend(789) # int objects are not iterable
+numbers.extend('avinash') 
+print(numbers)
+
+numbs={1,2,3,4}
+numbs.add(7)
+print(numbs)
