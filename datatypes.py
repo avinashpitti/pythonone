@@ -138,3 +138,20 @@ print(type(p))
 q=(4,)
 print(q)
 print(type(q))
+
+# append,extend,add,update
+digits=[1,2,3,4]
+digits.append([5,6,7])
+print(digits)
+digits.extend([8,9])
+print(digits)
+digits.extend((10,20,30,40,50))
+print(digits)
+
+setadd={1,2,3,3,1,2,5}
+print(setadd)
+setadd.add(9)
+print(setadd)
+# setadd.update(10,20,30) # int object is not iterable
+setadd.update('avinash')
+print(setadd)
