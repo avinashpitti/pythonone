@@ -42,3 +42,11 @@ x-=4
 print(x)
 x*=4
 print(x)
+
+
+# membership operators
+# It checks if value exists in a sequence
+print("membership operators")
+lang="python"
+print('y' in lang)
+print('z' not in lang)
