@@ -56,7 +56,9 @@ data=(1,2,3,4,5,[1,2,3],{50,60,50,70})
 print(data)
 print(type(data))
 print(data[4])
-# data[0]=999
+temp=list(data) # if you want to change the tuple first convert it into list
+temp[0]=999
+data=tuple(temp)
 print(data)
 
 #set
@@ -68,3 +70,46 @@ set2={1,10,20,30,40}
 print(set2)
 # set2[0]=33
 print(set2)
+
+#dict
+dict1={
+    "name":"avinash",
+    "age":22,
+    "address":{
+        "h.no":"2-35",
+        "street":"7th cross",
+        "area":"karthika nagara",
+        "city":"chennai"
+    }
+    
+}
+print(dict1)
+# print(dict1[2])
+print(dict1["address"])
+
+dict2={
+    "name":"varun",
+    "age":22,
+    "name":"kiran"
+}
+print(dict2)
+print(type(dict2))
+print(dict2["age"])
+print("age:",dict2["age"])
+print(f"age:{dict2['age']}")
+print({"age":dict2["age"]})
+
+for key,value in dict2.items():
+    print(f"{key}:{value}")
+
+for key in dict2.keys():
+    print(key)
+
+for key in dict2:
+    print(key)
+
+for value in dict2.values():
+    print(value)
+
+print("name" in dict2.keys())
+print("varun" in dict2.values())
