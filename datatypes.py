@@ -163,3 +163,17 @@ print(sliced[1:3]) # start value is included,stop value is excluded
 print(sliced[0:10:2])
 print(sliced[::-1])
 print(sliced[-1:-6:-1])
+
+
+# dictionary unpacking
+# dictionary unpacking is a way to pull key:value pairs out of a dictionary and 'spread' them 
+# into another dictionary.It is done using ** double asterisk operator
+d1={"a":1,"b":2}
+d2={"b":99,"c":3,"d":4}
+merge={**d1,**d2} # if a key appears twice, the latest wins
+print(merge)
+
+print("a" in d1)
+print(2 in d1.values())
+print(5 in d1.values())
+print( d1 is not d2)
