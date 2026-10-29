@@ -177,3 +177,13 @@ print("a" in d1)
 print(2 in d1.values())
 print(5 in d1.values())
 print( d1 is not d2)
+
+# type conversion
+# changing one data type into another
+z="10"
+z=int(z)
+print(z)
+
+w=15
+w=str(w)
+print(w)
