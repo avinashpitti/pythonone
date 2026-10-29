@@ -1,0 +1,13 @@
+# operators
+# operators are symbols used to perform operations on variables and values
+
+# arithmetic
+a1=12
+a2=5
+print(a1+a2)
+print(a1-a2)
+print(a1*a2)
+print(a1/a2) # always float even if it is 10/2 then also 2.0
+print(a1//a2) # It eliminates decimal
+print(a1%a2)
+print(a1**a2)
