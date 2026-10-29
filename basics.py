@@ -24,3 +24,8 @@ print(a==c)
 print(id(a))
 print(id(b))
 print(id(c))
+
+city=input("Enter your city:")
+a=int(input("Enter your marks:"))
+b=int(input("Enter your marks:"))
+
