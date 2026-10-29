@@ -44,3 +44,17 @@ print(info*3)
 print(info[5]*3)
 print(info[-1])
 # print(info[7][1])
+info[0]="suresh"
+print(info)
+
+#Tuple
+matter=1, # comma is what decides tuple not parantheses
+print(matter)
+print(type(matter))
+
+data=(1,2,3,4,5,[1,2,3],{50,60,50,70})
+print(data)
+print(type(data))
+print(data[4])
+# data[0]=999
+print(data)
