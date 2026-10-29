@@ -131,3 +131,10 @@ print(numbers)
 numbs={1,2,3,4}
 numbs.add(7)
 print(numbs)
+
+p=(3)
+print(p)
+print(type(p))
+q=(4,)
+print(q)
+print(type(q))
