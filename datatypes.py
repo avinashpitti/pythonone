@@ -28,3 +28,19 @@ print(type(a))
 b=-4.5
 print(b)
 print(type(b))
+
+#list
+info=["avinash",22,"vellore",3.5,[12,13,19,25],(1,2,3),{2,3,4,2,1},{"city":"Bengaluru","area":"marathahalli"}]
+print(info)
+print(type(info))
+print(info[1])
+print(info[::-1])
+print(info[::2])
+print(info[1::2])
+print(info[4][1])
+# print(info[5[2]])
+# print(info[6[2]])
+print(info*3)
+print(info[5]*3)
+print(info[-1])
+# print(info[7][1])
