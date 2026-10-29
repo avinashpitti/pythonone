@@ -50,3 +50,14 @@ print("membership operators")
 lang="python"
 print('y' in lang)
 print('z' not in lang)
+
+
+# Identity operators
+# checks if both variables refer to the same object
+print("Identity operators")
+a=[1,2,3]
+b=[1,2,3]
+print(a is b)
+print(a==b)
+
+
