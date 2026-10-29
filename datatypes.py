@@ -58,3 +58,13 @@ print(type(data))
 print(data[4])
 # data[0]=999
 print(data)
+
+#set
+set1={1,2,1,1,3,5,"avinash","hyderabad","avinash"}
+print(set1)
+print(type(set1))
+set2={1,10,20,30,40}
+# print(set1+set2)
+print(set2)
+# set2[0]=33
+print(set2)
