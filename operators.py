@@ -18,3 +18,16 @@ a=5
 b=10
 print(a!=b)
 print(a>b)
+
+
+# logical operators(and,or,not)
+# logical operators are used to combine conditions
+print("logical operators")
+a=10
+b=20
+c=30
+print(a<b and b>c)
+print(a<b or b>c)
+print(not True)
+print(not b)
+print(not False)
