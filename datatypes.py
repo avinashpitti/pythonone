@@ -20,3 +20,11 @@ print(type(num2))
 num3=0
 print(num3)
 print(type(num3)) 
+
+#float:
+a=1.0
+print(a)
+print(type(a))
+b=-4.5
+print(b)
+print(type(b))
