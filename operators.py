@@ -31,3 +31,14 @@ print(a<b or b>c)
 print(not True)
 print(not b)
 print(not False)
+
+# assignment operators
+# assignment operators are used to assign values to variables
+print("assignment operators")
+x=10
+x+=7
+print(x)
+x-=4
+print(x)
+x*=4
+print(x)
