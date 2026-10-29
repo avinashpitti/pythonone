@@ -61,3 +61,11 @@ print(a is b)
 print(a==b)
 
 
+# operator perecedence(pemdas)
+# it refers to in which order operations are performed
+print("operator precedence")
+x1=3
+x2=7
+x3=4
+x4=9
+print(x1**x2/x3+x4)
