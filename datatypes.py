@@ -155,3 +155,11 @@ print(setadd)
 # setadd.update(10,20,30) # int object is not iterable
 setadd.update('avinash')
 print(setadd)
+
+# slicing
+# slicing allows you to extract a specific portion of a sequence such as a str,list,tuple
+sliced="python is an interpreted programming language"
+print(sliced[1:3]) # start value is included,stop value is excluded
+print(sliced[0:10:2])
+print(sliced[::-1])
+print(sliced[-1:-6:-1])
