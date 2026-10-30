@@ -92,3 +92,21 @@ test()
 print(x) #20
 # print(y) # error: name y is not defined
 
+# lambda:a one line anonymous function
+# often used map,filter,sorted
+cubed=lambda c:c**3
+print(cubed(6))
+
+# map: applied function to each item
+nums=[1,2,3,4,5,6,7,8,9]
+sqs=list(map(lambda s:s**2,nums))
+print(sqs)
+
+# filter(): keeps items where function returns True
+evens=list(filter(lambda f:f%2==0,nums))
+print(evens)
+
+# sorted
+numbers=[45,23,18,33,99,5,78,20]
+sorting=sorted(numbers)
+print(sorting)
