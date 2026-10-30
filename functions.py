@@ -110,3 +110,11 @@ print(evens)
 numbers=[45,23,18,33,99,5,78,20]
 sorting=sorted(numbers)
 print(sorting)
+
+
+# docstring: a string right under def that describes the function
+# unlike comment, docstrings are stored as metadata and can be accessed at runtime
+def sub(a,b):
+    """Return the subtraction of a and b"""
+    return a-b
+print(sub(5,2))
