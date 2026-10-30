@@ -82,3 +82,13 @@ print(total(1, 2, 3))           # 6
 def show(**kwargs):
     print(kwargs)
 show(name='kiran',age=22)
+
+# scope: where a variable can be accessed
+x=20 # global
+def test():
+    y=5 # local
+    print(x,y)
+test()
+print(x) #20
+# print(y) # error: name y is not defined
+
