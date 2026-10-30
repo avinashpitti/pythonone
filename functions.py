@@ -15,9 +15,9 @@ a=invitation()
 # print(invitation())
 print(a)
 
-def sum(a,b):
-    print(a+b)
-sum(2,3)
+# def sum(a,b):
+#     print(a+b)
+# sum(2,3)
 
 # parameters and arguments
 #  parameters are the names in the definition 
@@ -55,3 +55,30 @@ print('hello',end=' ')
 print('world')
 print('hello',end='-')
 print('world')
+
+
+# types of arguments
+# positional,keyword,default,*args,**kwargs
+# positional arguments: matched by order
+def student(name,age=21):
+    return name,age
+print(student("avinash",22))
+# print(student(32,"avinash"))
+
+# keyword arguments: matched by name,so order doesn't matter
+print(student(age=19,name="suresh"))
+
+# default arguments: used when no value is passed
+print(student(name="anil"))
+
+# *args: any number of positional args collected as a tuple
+def total(*args):
+    print(args)          # (1, 2, 3)
+    return sum(args)
+
+print(total(1, 2, 3))           # 6
+
+# **kwargs : any number of keyword arguments(collected as a dictionary)
+def show(**kwargs):
+    print(kwargs)
+show(name='kiran',age=22)
