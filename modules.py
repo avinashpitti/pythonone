@@ -49,3 +49,6 @@ print(sys.path)
 # create file mymodule.py import it here
 import mymodule
 print(mymodule.greet("Trump"))
+
+# module : a single .py file
+# package: a folder of moudles(it can contain an __init__.py file. ex:json)
