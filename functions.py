@@ -126,3 +126,19 @@ def factorial(n):
     return n*factorial(n-1)
 print(factorial(5))
 print(factorial(7))
+
+
+# decorator
+# A decorator is a function that takes another function as an input,adds some functionality to it,
+# and returns it-all without permanently modifying the original functions source code.
+
+def my_decarator(func):
+    def wrapper():
+        print("Before function runs")
+        func()
+        print("After function runs")
+    return wrapper
+@my_decarator
+def say_hello():
+    print("Hello!")
+say_hello()
