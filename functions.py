@@ -118,3 +118,11 @@ def sub(a,b):
     """Return the subtraction of a and b"""
     return a-b
 print(sub(5,2))
+
+# recursion:A function that call itself.It needs a base case to stop
+def factorial(n):
+    if n==1:  #basecase
+        return 1
+    return n*factorial(n-1)
+print(factorial(5))
+print(factorial(7))
