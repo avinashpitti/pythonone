@@ -84,3 +84,23 @@ print(1_22)
 print(abs(5.2))
 print(int("10")+3)
 print(int(-3.9))
+
+import copy
+
+a = [1, 2, [3, 4]]
+b = a                # alias
+c = a[:]             # shallow copy
+d = copy.deepcopy(a) # deep copy
+
+a[2].append(5)       # mutate inner list
+
+print(a)
+print(b)
+print(c)
+print(d)
+
+a.append(99)
+print(a)
+print(b)
+print(c)
+print(d)
