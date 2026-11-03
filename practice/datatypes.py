@@ -104,3 +104,58 @@ print(a)
 print(b)
 print(c)
 print(d)
+
+
+print("print all these")
+print(int("42")) #42
+print(int("  42  "))#42
+print(float("3.14"))#3.14
+print(str(42))#"42"
+print(list("abc"))#['a','b','c']
+print(tuple([1, 2]))#(1,2)
+print(set([1, 2, 2, 3]))#{1,2,3}
+print(list(range(3)))#[0,1,2]
+print(bool(""))#False
+print(bool("0"))#True
+print(bool(0))#False
+print(bool([]))#False
+print(bool("False"))#True
+
+
+# squence type comparison
+print("sequence type comparison")
+print("abc"[1]) #b
+print(("a", "b", "c")[1])#b
+print(["a", "b", "c"][1])#b
+print(range(5)[1])#1
+print("abc"[1:])#bc
+print(("a", "b", "c")[1:])#('b','c')
+print(["a", "b", "c"][1:])#['b','c']
+print(range(5)[1:])#(1,5)
+
+
+#None behaviour
+print("None behavior")
+print(type(None))#None
+print(None == None)#True
+print(None is None)#True
+print(bool(None))#False
+x = None
+print(x is None)#True
+print(x == None)#True
+print(None == 0)#False
+print(None == False)#False
+print(None == "")#False
+
+print("understand isinstance")
+print(isinstance(True, int))#True
+print(isinstance(True, bool))#True
+print(isinstance(5, bool))#False
+print(isinstance(5, object))#True
+print(type(True) == int)#True
+print(type(True) == bool)#True
+
+# Numeric tower:
+print(isinstance(5, (int, float)))#True
+print(isinstance(5.0, (int, float)))#True
+print(isinstance(True, (int, float)))#True
