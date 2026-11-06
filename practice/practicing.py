@@ -213,5 +213,8 @@ for i in n:
     print(i)
 
 
+k=(1,2,3)
+l=(1,2,3)
+print(k is l)# often true(small tuples may be cached)
 
 
