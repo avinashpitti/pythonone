@@ -218,3 +218,55 @@ l=(1,2,3)
 print(k is l)# often true(small tuples may be cached)
 
 
+# def char_count(word):
+#     counts = {}
+#     for char in word:
+#         counts[char] = counts.get(char, 0) + 1
+#     return counts
+
+# print(char_count("Missisippi"))
+# print(char_count("India"))
+
+
+def char_count(word):
+    counts={}
+    word=word.lower()
+    for char in word:
+        if char in counts:
+            counts[char]+=1
+        else:
+            counts[char]=1
+    return counts
+
+print(char_count("banana"))
+print(char_count(""))
+
+
+def remove_punctuation(text):
+    punctuations=".,!?"
+    cleaned_text=""
+    for char in text:
+        if char not in punctuations:
+            cleaned_text+=char
+    return cleaned_text
+
+print(remove_punctuation("Hello, world!"))
+print(remove_punctuation("Hi... what?"))
+print(remove_punctuation("Hey, how are you? I hope you are doing well. I am not well. oh! I am sorry."))
+
+def count_words(text):
+    counts={}
+    punctuations=".,!?"
+    cleaned_text=""
+
+    for char in text:
+        if char not in punctuations:
+            cleaned_text+=char
+            
+    words=cleaned_text.lower().split()
+    for word in words:
+        counts[word]=counts.get(word,0)+1
+
+    return counts
+print(count_words("The cat and the hat. The cat, oh! Is that the cat?"))
+
