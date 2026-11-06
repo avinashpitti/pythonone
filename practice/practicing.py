@@ -161,3 +161,57 @@ def word_lengths(text):
     return lengths
 print(word_lengths("I love Python"))
 print(word_lengths("hi"))
+
+def greeting(name):
+    return "Hello, {}!".format(name)
+print(greeting("avinash avi"))
+
+for i,value in enumerate(["a","b"],start=1):
+    print(i,value)
+
+
+dict1={"name":"avi","age":22,"city":"Bengaluru"}
+for key in dict1:
+    print(key)
+# both are same we no need to explicitly mention for keys
+for key in dict1.keys():
+    print(key)
+
+for value in dict1.values():
+    print(value)
+
+for item in dict1.items():
+    print(item)
+
+
+age=32
+status="Major" if age>=18 else "Minor"
+print(status)
+
+print(type(0))#int
+
+
+for j,value in enumerate(['a','b','c'],start=1):
+    print(j,value)
+
+m=[1,2,3,4,5]
+print(m[::-1])
+print(type(m))
+m[0]=99
+print(m)
+
+n=(1,2,3,4,5,6)
+print(id(n))
+r=n[::-1]
+print(id(r))
+
+print(type(n))
+# n[0]=77  # tuple object doesn't support item assignment
+print(n)
+
+for i in n:
+    print(i)
+
+
+
+
